@@ -14,8 +14,8 @@ class EscalationEngine:
     def __init__(self):
         # Critical Safety triggers (highest priority)
         self.safety_patterns = [
-            r"\b(swollen|bulging|smoke|fire|burning smell|sparks?|exploded?)\b",
-            r"\b(battery expanding|screen popping off|hot to touch)\b"
+            r"\b(swollen|bulging|expanding|smoke|fire|burning smell|sparks?|exploded?)\b",
+            r"(battery.*expand|screen.*popping off|hot to touch|swollen battery|battery.*swelled)"
         ]
 
         # Physical hardware damage triggers

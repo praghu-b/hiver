@@ -1,5 +1,5 @@
 {
-  "evaluation_timestamp": "2026-09-09T09:36:54Z",
+  "evaluation_timestamp": "2026-09-09T09:39:08Z",
   "golden_set_size": 200,
   "human_benchmark_size": 50,
   "systems": [
@@ -104,7 +104,7 @@
     {
       "name": "Baseline 2 (Simple)",
       "sample_count": 200,
-      "execution_time_sec": 0.08,
+      "execution_time_sec": 0.09,
       "classification": {
         "accuracy": 0.455,
         "macro_f1": 0.3944,
@@ -202,7 +202,7 @@
     {
       "name": "Proposed (AppleSupportAgent)",
       "sample_count": 200,
-      "execution_time_sec": 0.1,
+      "execution_time_sec": 0.11,
       "classification": {
         "accuracy": 0.795,
         "macro_f1": 0.7926,
@@ -290,9 +290,9 @@
         "tn": 129
       },
       "generation": {
-        "rouge1": 0.2084,
-        "rouge2": 0.0375,
-        "rougeL": 0.1437,
+        "rouge1": 0.2101,
+        "rouge2": 0.0388,
+        "rougeL": 0.1456,
         "twitter_length_compliance_pct": 100.0,
         "judge_overall_score": 4.61
       }
