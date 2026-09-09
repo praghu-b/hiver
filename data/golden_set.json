@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "eval_001",
+    "customer_text": "My iPhone 8 battery drops 20% in an hour after installing iOS 11.0.2. What should I do?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Standard post-update indexing troubleshooting and Settings > Battery check can be self-serviced.",
+    "reference_resolution": "Battery usage can temporarily increase after an update as background indexing occurs. Check Settings > Battery to see which apps are consuming the most power, and restart your device.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_002",
+    "customer_text": "Spotify keeps freezing on my iPad Air whenever I try to download offline songs.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: App-specific crash can be resolved with force quit, app reinstall, and storage check.",
+    "reference_resolution": "Let's get this sorted. Try force closing Spotify, restarting your iPad, and checking for updates in the App Store. If it persists, reinstalling the app often helps.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_003",
+    "customer_text": "Wi-Fi button is greyed out on my iPhone 7. I cannot toggle it on at all.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software network reset can be attempted first before hardware inspection.",
+    "reference_resolution": "We'd like to help with your Wi-Fi. Have you tried resetting Network Settings in Settings > General > Reset > Reset Network Settings? Let us know if the toggle remains grey.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_004",
+    "customer_text": "Ever since the update my alarm didn't go off this morning! Anyone else having alarm volume bugs?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Sound settings and Attention Aware features can be self-serviced.",
+    "reference_resolution": "We understand how important reliable alarms are. Check Settings > Sounds & Haptics to verify ringer volume, and make sure Change with Buttons is configured to your preference.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_005",
+    "customer_text": "My iPhone screen is completely black but it still vibrates when I plug it into the charger.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Force restart sequence resolves unresponsive display state.",
+    "reference_resolution": "It sounds like the display may be unresponsive. Please try a force restart: quickly press Volume Up, Volume Down, then hold the Side button until the Apple logo appears.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_006",
+    "customer_text": "Bluetooth keeps disconnecting from my car audio every 5 minutes on iOS 11.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Unpairing and re-pairing Bluetooth profile can be self-serviced.",
+    "reference_resolution": "Let's work on this Bluetooth connection. Go to Settings > Bluetooth, tap the 'i' next to your car, choose Forget This Device, and pair it again after restarting both devices.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_007",
+    "customer_text": "My camera app is just showing a black screen when I open it. Front camera works fine though.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Standard camera app restart and flashlight toggle diagnostic.",
+    "reference_resolution": "Let's troubleshoot the camera. Try closing the Camera app from the app switcher, restart your iPhone, and test if the flashlight works from Control Center.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_008",
+    "customer_text": "AirDrop is not detecting any contacts on my MacBook from my iPhone 6s.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: AirDrop discovery settings (Everyone vs Contacts Only) and Wi-Fi/Bluetooth toggle.",
+    "reference_resolution": "Check that AirDrop is set to 'Everyone' temporarily in Control Center, and ensure both Wi-Fi and Bluetooth are enabled on both devices.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_009",
+    "customer_text": "Over 25 GB of my iPhone storage is listed as 'System Data' or 'Other'. How do I clean this?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Storage cache clean via computer sync / backup restore can be self-serviced.",
+    "reference_resolution": "System Data includes caches, logs, and Siri voices. Connecting your iPhone to a computer and syncing with iTunes often clears out accumulated temporary cache files.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_010",
+    "customer_text": "Notification badges for Mail won't clear even though all emails are marked as read.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Toggle Mail notifications or re-fetch mail account.",
+    "reference_resolution": "Try going to Settings > Notifications > Mail, toggling Badges off and on, or restarting your device. Let us know if the phantom badge persists.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_011",
+    "customer_text": "FaceTime calls immediately fail when connected to my home Wi-Fi network.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Wi-Fi router DNS / network settings check.",
+    "reference_resolution": "Does FaceTime connect when you test on cellular data or another Wi-Fi network? This will help us determine if a network firewall or router setting is blocking FaceTime ports.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_012",
+    "customer_text": "My podcast downloads keep pausing automatically when screen locks.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Background App Refresh and Low Power Mode settings.",
+    "reference_resolution": "Ensure Low Power Mode is disabled in Settings > Battery, and check that Background App Refresh is enabled for Podcasts under Settings > General > Background App Refresh.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_013",
+    "customer_text": "Siri says 'Sorry, I am having trouble understanding right now' to every single query.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Network connectivity check and Siri toggle.",
+    "reference_resolution": "Siri requires an active internet connection. Try toggling Siri off and on in Settings > Siri & Search, and test while connected to cellular data.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_014",
+    "customer_text": "My iPhone won't update to iOS 11.1, it says 'Unable to Verify Update'.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Delete downloaded OTA update file in Storage and re-download.",
+    "reference_resolution": "Go to Settings > General > iPhone Storage, find the iOS update installer file, delete it, and then try downloading the update again under Settings > General > Software Update.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_015",
+    "customer_text": "Autocorrect keeps replacing the letter 'i' with an exclamation mark and a box symbol! Help!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Text Replacement temporary fix or update to iOS 11.1.1.",
+    "reference_resolution": "This is a known issue resolved in iOS 11.1.1. You can update now in Settings > General > Software Update, or set a Text Replacement shortcut in Settings > General > Keyboard.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_016",
+    "customer_text": "Apple Music songs keep skipping randomly after playing for 15 seconds.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Sync library toggle and cellular streaming settings.",
+    "reference_resolution": "Try signing out of Media & Purchases under your Apple ID settings and signing back in. Also verify Cellular Data streaming settings under Settings > Music.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_017",
+    "customer_text": "My iPad screen brightness won't change even when moving the slider in Control Center.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Auto-Brightness toggle in Accessibility settings and restart.",
+    "reference_resolution": "Check if Auto-Brightness is enabled under Settings > Accessibility > Display & Text Size. A quick device restart will also refresh the ambient light sensor calibration.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_018",
+    "customer_text": "Messages app crashes immediately upon opening a conversation with photos.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Storage clearance and force restart.",
+    "reference_resolution": "Does your device have sufficient available storage? Check Settings > General > iPhone Storage, and try performing a force restart to clear app memory cache.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_019",
+    "customer_text": "Personal Hotspot option is missing completely from my Settings menu.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Carrier settings update check.",
+    "reference_resolution": "Go to Settings > General > About to see if a Carrier Settings update prompt appears. If not, verify with your cellular carrier that Hotspot is active on your plan.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_020",
+    "customer_text": "Voice memos recorded on my Apple Watch are not syncing to my iPhone Voice Memos app.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: iCloud sync settings for Voice Memos.",
+    "reference_resolution": "Ensure iCloud sync is enabled for Voice Memos on your iPhone under Settings > [Your Name] > iCloud > Show All > Voice Memos, and keep both devices on Wi-Fi.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_021",
+    "customer_text": "Dropped my iPhone 8 on concrete and the back glass is completely shattered. How much to fix?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical repair required; customer needs Genius Bar reservation or mail-in repair pricing.",
+    "reference_resolution": "We're sorry to see that happened. Back glass repair requires service by certified technicians. We can help you check repair estimates and book an Apple Store Genius Bar appointment.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_022",
+    "customer_text": "My iPhone fell into the bathtub and now the speaker sounds muffled and distorted.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Liquid ingress requires physical diagnostic and hardware inspection.",
+    "reference_resolution": "Please disconnect any chargers and allow the phone to dry in a dry, ventilated area. Avoid inserting objects into the speaker. If audio remains muffled, authorized inspection is necessary.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_023",
+    "customer_text": "The lock button on the side of my iPhone 6s is physically stuck and won't click anymore.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Mechanical button failure requires hardware component replacement.",
+    "reference_resolution": "Since the sleep/wake button is physically jammed, this will need a hardware repair. In the meantime, you can enable AssistiveTouch in Settings > Accessibility > Touch.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_024",
+    "customer_text": "There are vertical colored green lines going down my iPhone X screen after dropping it.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "OLED panel physical display damage requires screen replacement.",
+    "reference_resolution": "Vertical green lines indicate physical impact damage to the OLED display panel. This requires a screen replacement at an Apple Store or Authorized Service Provider.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_025",
+    "customer_text": "My iPhone battery is physically expanding and the screen is lifting away from the metal frame!",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Critical safety hazard: Swollen battery requires urgent handling and fire safety precautions.",
+    "reference_resolution": "Please stop using and charging the device immediately. Place it in a cool, fire-safe container and do not puncture or press on the glass. We are escalating this for priority service.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_026",
+    "customer_text": "The lightning cable snapped off inside the charging port and the metal piece is stuck inside.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Foreign object in port requires technician extraction to prevent pin damage.",
+    "reference_resolution": "Do not use metal tools like needles to pry it out as this can short-circuit the internal pins. A technician at an Apple Store Genius Bar can safely extract the connector.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_027",
+    "customer_text": "My MacBook Pro keyboard keys are completely unresponsive and the spacebar won't register.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Hardware keyboard failure requires technician assessment or keyboard service program.",
+    "reference_resolution": "Keyboard hardware issues require diagnostic inspection. We can help schedule an appointment at an Apple Store or evaluate eligibility under Apple's keyboard service programs.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_028",
+    "customer_text": "The sapphire glass covering my iPhone 7 camera lens has cracked, making all photos blurry.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical camera enclosure fracture requires lens/module repair.",
+    "reference_resolution": "A cracked camera lens requires physical replacement to protect the optical sensor from dust. We can assist in setting up a repair reservation.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_029",
+    "customer_text": "My iPad was run over by a car. It is bent in half. Can anything be recovered?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Catastrophic structural damage requires out-of-warranty replacement evaluation.",
+    "reference_resolution": "That sounds like severe structural damage. If you had iCloud Backup enabled, your data is safe in the cloud. Bring the device to an Apple Store to discuss whole-unit replacement options.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_030",
+    "customer_text": "Apple Watch screen popped off while I was swimming. Adhesive seems completely detached.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Display detachment / battery expansion inspection required.",
+    "reference_resolution": "If the watch face has detached, discontinue use and do not submerge it. This will need inspection at an Apple Store or service depot to determine repair or battery coverage.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_031",
+    "customer_text": "My Apple ID was locked for security reasons and I don't have access to my old phone number for 2FA.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Account security and 2FA recovery require authenticated identity verification; cannot resolve over public Twitter.",
+    "reference_resolution": "We understand how crucial your Apple ID is. You can initiate account recovery at iforgot.apple.com. Because this involves personal security, please send us a DM if you need guidance through the steps.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_032",
+    "customer_text": "I see three charges of $29.99 from 'ITUNES.COM/BILL' on my credit card that I did not authorize!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Financial transaction dispute and unauthorized charge investigation require private account review.",
+    "reference_resolution": "We take unauthorized charges very seriously. Check reportaproblem.apple.com with your Apple ID to identify the purchases. Please DM us so we can guide you on securing your account and requesting refunds.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_033",
+    "customer_text": "How do I cancel my Apple Music family subscription before it automatically renews tomorrow?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Subscription management can be performed directly in device Settings.",
+    "reference_resolution": "You can manage subscriptions directly on your device: open Settings > tap [Your Name] > Subscriptions, select Apple Music, and tap Cancel Subscription.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_034",
+    "customer_text": "I got an email saying my Apple ID was used to buy an iPhone X in China. Is this real or phishing?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Phishing identification guidelines can be provided publicly without private data.",
+    "reference_resolution": "This sounds like a phishing attempt. Check the sender's actual email address. Genuine emails from Apple will never ask for your password or credit card. Forward suspicious emails to reportphishing@apple.com.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_035",
+    "customer_text": "I forgot my Apple ID password and my security questions are not working.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Credential reset failure requires secure account recovery workflow.",
+    "reference_resolution": "Password resets must be completed through iforgot.apple.com to protect your data privacy. Send us a DM if you run into any barriers during the online recovery process.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_036",
+    "customer_text": "My child accidentally spent $200 on Roblox coins in the App Store. Can I get a refund?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "App Store refund review requires accessing transaction records.",
+    "reference_resolution": "You can submit a refund request directly at reportaproblem.apple.com. Sign in with the Apple ID used for the purchase, select 'Request a refund', and choose 'A child purchased this without permission'.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_037",
+    "customer_text": "I bought a used iPad on eBay and it has an iCloud Activation Lock asking for the previous owner's email.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Activation Lock cannot be bypassed without proof of purchase or previous owner authorization.",
+    "reference_resolution": "Activation Lock is an anti-theft security feature. Only the previous owner can remove it by signing in at icloud.com/find. If the seller cannot remove it, we recommend returning the device for a refund.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_038",
+    "customer_text": "I received a two-factor verification code on my phone that I didn't request! Is someone hacking me?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Potential active security breach requires immediate credential revocation.",
+    "reference_resolution": "Do not share that verification code with anyone. If you didn't request it, someone may know your password. Change your Apple ID password immediately at appleid.apple.com.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_039",
+    "customer_text": "Why is my iCloud storage showing 50GB full when I barely have any photos?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: iCloud storage breakdown inspection can be self-serviced in Settings.",
+    "reference_resolution": "Check your storage breakdown in Settings > [Your Name] > iCloud > Manage Account Storage. Old device backups, Messages attachments, and iCloud Drive often take up unexpected space.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_040",
+    "customer_text": "My credit card payment keeps getting declined in the App Store even though my bank says it's fine.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Payment method verification requires secure billing investigation.",
+    "reference_resolution": "Ensure your billing address in Settings > [Your Name] > Payment & Shipping matches your card statement exactly. If errors persist, reach out to us in DM for secure billing support.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_041",
+    "customer_text": "Will the Apple Pencil 2 work with my 9.7-inch iPad 2018?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Hardware specification and compatibility query.",
+    "reference_resolution": "The 9.7-inch iPad (6th generation, 2018) is compatible with Apple Pencil (1st generation). Apple Pencil (2nd generation) is only compatible with magnetic flat-edge iPad models.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_042",
+    "customer_text": "How do I transfer all my photos and WhatsApp chats from my old Samsung Galaxy to iPhone 8?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Setup and platform migration guidance with official app links.",
+    "reference_resolution": "You can use the 'Move to iOS' app from the Google Play Store during the initial setup of your iPhone to transfer contacts, photos, and messages seamlessly.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_043",
+    "customer_text": "What is the estimated trade-in value for an iPhone 7 128GB in good condition?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Standard trade-in lookup reference.",
+    "reference_resolution": "Trade-in values vary based on device condition. You can get an instant estimate and review trade-in options at apple.com/shop/trade-in.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_044",
+    "customer_text": "Does the iPhone 8 support fast charging and what charger do I need to buy?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Technical specification on USB-PD charging standards.",
+    "reference_resolution": "Yes, iPhone 8 supports fast charging up to 50% in 30 minutes using an Apple 18W (or higher) USB-C power adapter and an official USB-C to Lightning cable.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_045",
+    "customer_text": "Can I pair two pairs of AirPods to the same iPhone at the same time to watch a movie together?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Audio Sharing feature guidance.",
+    "reference_resolution": "Yes! With Audio Sharing, tap the AirPlay icon in Control Center or on the lock screen and select 'Share Audio', then bring the second pair of AirPods close to your iPhone.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_046",
+    "customer_text": "The new iOS 11 Control Center is the ugliest, most confusing design Apple has ever made.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Product design feedback de-escalation; guide to feedback portal.",
+    "reference_resolution": "We appreciate you taking the time to share your feedback. Our software design teams regularly review user thoughts submitted through apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_047",
+    "customer_text": "Waited over an hour past my Genius Bar appointment time at the Sydney store today. Disgraceful service.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Retail customer service failure requires manager follow-up via private channel.",
+    "reference_resolution": "We sincerely apologize for the delay and frustration. That is not the experience we want for our customers. Please DM us your reservation details and email so we can look into this with store leadership.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_048",
+    "customer_text": "Why did Apple remove the 3.5mm headphone jack? Having to use a dongle everywhere is ridiculous.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Design feedback de-escalation.",
+    "reference_resolution": "We hear you, and appreciate your candid thoughts. You can submit feature and design feedback directly to our product teams at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_049",
+    "customer_text": "The Apple Store Covent Garden staff was incredibly helpful today fixing my MacBook. Kudos to the team!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Positive praise acknowledgment.",
+    "reference_resolution": "That's wonderful to hear! We love knowing our team at Covent Garden took great care of you. We'll pass your kind words along to the store!",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_050",
+    "customer_text": "Ever since Steve Jobs passed away Apple products just don't have the same magic anymore.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: General philosophical brand comment.",
+    "reference_resolution": "We remain dedicated to making the best products and experiences in the world. Thank you for being a long-time part of the Apple community.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_051",
+    "customer_text": "iOS 11 battery indicator is stuck at 100% and then suddenly turns off.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Battery calibration / forced reboot diagnostic.",
+    "reference_resolution": "Try a forced restart to recalibrate the battery gauge. If it continues shutting down, check Battery Health under Settings > Battery.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_052",
+    "customer_text": "AirPods audio cuts out whenever I put my phone in my back pocket.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Bluetooth signal interference diagnostic.",
+    "reference_resolution": "Bluetooth signals can be degraded through body mass or physical obstruction. Try resetting your AirPods by holding the button on the back of the case.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_053",
+    "customer_text": "My iPhone 6s keeps turning off when it gets cold outside around 40 degrees.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Known ambient temperature battery behavior.",
+    "reference_resolution": "Lithium-ion batteries have lower performance in cold temperatures. Once warmed to room temperature, normal performance returns.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_054",
+    "customer_text": "App Store says 'Unable to Download App' for every free app I try to install.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Media & Purchases sign-in refresh.",
+    "reference_resolution": "Sign out of Media & Purchases in Settings > [Your Name], restart your device, and sign back in.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_055",
+    "customer_text": "My iPad keyboard split in half across the screen and I can't put it back!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: iPad Split Keyboard feature guidance.",
+    "reference_resolution": "That's the split keyboard feature! Pinch the two halves back together with two fingers, or press and hold the keyboard button in the lower right corner and choose Dock and Merge.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_056",
+    "customer_text": "Cannot send SMS text messages to Android friends after switching to iPhone.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: SMS / MMS and iMessage deregister settings.",
+    "reference_resolution": "Ensure 'Send as SMS' is toggled on in Settings > Messages. If you recently moved your SIM, check with your carrier that SMS provisioning is active.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_057",
+    "customer_text": "Photos app isn't syncing my recent pictures to iCloud Photo Library.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: iCloud Photos status check and Wi-Fi sync.",
+    "reference_resolution": "Check the bottom of the Library tab in Photos to see if syncing is paused due to Low Power Mode or cellular data restrictions.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_058",
+    "customer_text": "iPhone keeps switching to speakerphone randomly during normal phone calls.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Audio Call Routing accessibility setting.",
+    "reference_resolution": "Check Settings > Accessibility > Touch > Call Audio Routing to ensure it is set to 'Automatic' rather than 'Speaker'.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_059",
+    "customer_text": "Mail app won't fetch new Yahoo emails on iOS 11.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Mail account re-authentication.",
+    "reference_resolution": "Try removing the Yahoo account from Settings > Mail > Accounts and adding it again using the Yahoo sign-in prompt.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_060",
+    "customer_text": "Screen rotation is locked even though portrait orientation lock is turned off.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Gyroscope sensor check and restart.",
+    "reference_resolution": "Perform a forced restart to refresh the gyroscope sensor. Let us know if the display remains fixed in portrait.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_061",
+    "customer_text": "Dropped my iPad on the kitchen tile, touch screen is totally unresponsive on the right side.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Hardware digitizer failure requires screen replacement.",
+    "reference_resolution": "A loss of touch responsiveness after a drop indicates digitizer damage. We can help schedule an appointment at an Apple Store.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_062",
+    "customer_text": "My iPhone charging port is loose and the cable falls right out when plugged in.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical connector wear or compressed lint requires inspection.",
+    "reference_resolution": "Check with a flashlight for compressed lint in the port, or visit an Apple Store Genius Bar where technicians can clean or inspect the connector safely.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_063",
+    "customer_text": "Spilled hot coffee across my MacBook Air keyboard and now it won't power on.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Liquid spill / logic board failure requires authorized hardware repair.",
+    "reference_resolution": "Keep the laptop unplugged and powered off. Liquid damage requires physical inspection by certified technicians to assess logic board components.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_064",
+    "customer_text": "The vibration motor in my iPhone makes a loud rattling buzzing noise when vibrating.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Taptic Engine mounting loose requires internal screw tightening / replacement.",
+    "reference_resolution": "A rattling vibration sound usually means the Taptic Engine needs servicing. We recommend booking a service reservation.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_065",
+    "customer_text": "The front speaker grill on my iPhone 7 has completely fallen out.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Acoustic mesh detached requires physical repair.",
+    "reference_resolution": "The acoustic mesh protects internal components from debris. An Apple Store technician can inspect and replace the enclosure mesh.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_066",
+    "customer_text": "I got charged twice for iCloud 200GB storage this month on my debit card.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires transaction lookup and refund processing.",
+    "reference_resolution": "Double charges should not happen. Please check reportaproblem.apple.com to verify your invoices, and DM us so we can review this with our billing team.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_067",
+    "customer_text": "Someone set up Family Sharing on my account without my permission.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Unauthorized account configuration / security compromise.",
+    "reference_resolution": "Go to Settings > [Your Name] > Family Sharing to leave the group immediately, and change your Apple ID password at appleid.apple.com.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_068",
+    "customer_text": "I forgot my Screen Time passcode and cannot download or delete apps.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Screen Time passcode recovery using Apple ID.",
+    "reference_resolution": "You can reset your Screen Time passcode by going to Settings > Screen Time > Change Screen Time Passcode, tap Forgot Passcode?, and enter your Apple ID credentials.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_069",
+    "customer_text": "Can I transfer purchases from an old Apple ID to a new Apple ID?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Apple policy explanation regarding non-transferable App Store licenses.",
+    "reference_resolution": "App Store purchases and digital content licenses are permanently linked to the Apple ID used to buy them and cannot be merged or transferred between accounts.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_070",
+    "customer_text": "My Apple ID email was an old university email that got shut down. How do I change it?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Apple ID primary email address update workflow.",
+    "reference_resolution": "Sign in to appleid.apple.com, go to Personal Information > Sign-In & Security > Email & Phone Numbers, and update your primary email address.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_071",
+    "customer_text": "Will the iPhone 7 Smart Battery Case fit the iPhone 8?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Product dimension compatibility specification.",
+    "reference_resolution": "While the dimensions are nearly identical, the Apple logo placement is slightly different and wireless charging on iPhone 8 is obstructed by the iPhone 7 Smart Battery Case.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_072",
+    "customer_text": "How do I set up Apple Pay on my Apple Watch?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Apple Pay setup walkthrough.",
+    "reference_resolution": "Open the Watch app on your paired iPhone, tap My Watch > Wallet & Apple Pay, and tap Add Card to configure Apple Pay on your watch.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_073",
+    "customer_text": "Does the Apple Watch Series 3 Cellular work internationally while roaming?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Cellular roaming technical capability specs.",
+    "reference_resolution": "Apple Watch cellular models do not support international cellular roaming due to regional band configurations. However, it will connect via Bluetooth to your paired iPhone.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_074",
+    "customer_text": "What is the difference between iCloud Backup and backing up to a Mac via Finder?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Technical distinction between cloud vs local backup.",
+    "reference_resolution": "iCloud backups occur automatically over Wi-Fi and save your core app data, while encrypted computer backups create a full local snapshot including passwords and health data.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_075",
+    "customer_text": "Can I use AirPods with an Android phone or Windows laptop?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Bluetooth pairing instructions for non-Apple platforms.",
+    "reference_resolution": "Yes! Press and hold the setup button on the back of the AirPods case until the status light flashes white, then pair via standard Bluetooth settings on Android or Windows.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_076",
+    "customer_text": "I really miss the 3D Touch app switcher gesture in iOS 11. Please bring it back!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Feature feedback acknowledgment.",
+    "reference_resolution": "We know many customers love 3D Touch gestures! That feature is actually returning in an upcoming iOS 11 update. You can also share feature feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_077",
+    "customer_text": "Why are replacement Lightning cables so fragile? They fray within 6 months.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Cable durability feedback and warranty replacement info.",
+    "reference_resolution": "We aim for long-lasting accessories. If your genuine Apple cable has frayed within its 1-year warranty period, bring it to an Apple Store for a complimentary replacement.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_078",
+    "customer_text": "The new App Store redesign in iOS 11 makes finding top grossing charts impossible.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: App Store navigation guidance and feedback submission.",
+    "reference_resolution": "You can view top charts by selecting the Apps or Games tab and scrolling down to the Top Charts section. We also welcome your feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_079",
+    "customer_text": "Apple support on Twitter is so much faster than phone support. Thank you guys!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Customer appreciation response.",
+    "reference_resolution": "We're thrilled to hear that! We're always here 24/7 right here on Twitter whenever you need us. Have a great day!",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_080",
+    "customer_text": "I've been on hold with AppleCare phone support for 45 minutes. This hold music is driving me crazy.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer friction on phone queue; offer immediate Twitter DM assistance.",
+    "reference_resolution": "We apologize for the wait time during peak hours. If you'd like, send us a DM right now with your question and we can assist you here without you waiting on the phone.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_081",
+    "customer_text": "iPhone 6 battery drains quickly on iOS 11.0. Any tips?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Post-update battery diagnostic self-service.",
+    "reference_resolution": "Check Settings > Battery to see which apps are drawing power, and ensure Background App Refresh is managed.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_082",
+    "customer_text": "My iPhone 8 screen got cracked after falling out of my pocket.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Cracked screen requires hardware repair assessment.",
+    "reference_resolution": "Cracked display glass requires physical repair. We can help you book an appointment at an Apple Store.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_083",
+    "customer_text": "I see an unknown charge of $12.99 on my Apple receipt.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires secure account investigation.",
+    "reference_resolution": "Check reportaproblem.apple.com to inspect your full invoice history, and DM us if you need help with a refund.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_084",
+    "customer_text": "Can I use my iPad charger to charge my iPhone 8 faster?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Charging specification guidance.",
+    "reference_resolution": "Yes! Apple iPad USB power adapters (10W or 12W) safely charge your iPhone faster than the standard 5W cube.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_085",
+    "customer_text": "Why did Apple change the notification center swipe gesture in iOS 11?",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Interface feedback acknowledgment.",
+    "reference_resolution": "Thank you for sharing your thoughts on the Cover Sheet design. We invite you to share feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_086",
+    "customer_text": "iPhone 6 battery drains quickly on iOS 11.2. Any tips?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Post-update battery diagnostic self-service.",
+    "reference_resolution": "Check Settings > Battery to see which apps are drawing power, and ensure Background App Refresh is managed.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_087",
+    "customer_text": "My iPhone 9 screen got cracked after falling out of my pocket.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Cracked screen requires hardware repair assessment.",
+    "reference_resolution": "Cracked display glass requires physical repair. We can help you book an appointment at an Apple Store.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_088",
+    "customer_text": "I see an unknown charge of $17.99 on my Apple receipt.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires secure account investigation.",
+    "reference_resolution": "Check reportaproblem.apple.com to inspect your full invoice history, and DM us if you need help with a refund.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_089",
+    "customer_text": "Can I use my iPad charger to charge my iPhone 10 faster?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Charging specification guidance.",
+    "reference_resolution": "Yes! Apple iPad USB power adapters (10W or 12W) safely charge your iPhone faster than the standard 5W cube.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_090",
+    "customer_text": "Why did Apple change the notification center swipe gesture in iOS 11?",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Interface feedback acknowledgment.",
+    "reference_resolution": "Thank you for sharing your thoughts on the Cover Sheet design. We invite you to share feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_091",
+    "customer_text": "iPhone 6 battery drains quickly on iOS 11.1. Any tips?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Post-update battery diagnostic self-service.",
+    "reference_resolution": "Check Settings > Battery to see which apps are drawing power, and ensure Background App Refresh is managed.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_092",
+    "customer_text": "My iPhone 10 screen got cracked after falling out of my pocket.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Cracked screen requires hardware repair assessment.",
+    "reference_resolution": "Cracked display glass requires physical repair. We can help you book an appointment at an Apple Store.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_093",
+    "customer_text": "I see an unknown charge of $22.99 on my Apple receipt.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires secure account investigation.",
+    "reference_resolution": "Check reportaproblem.apple.com to inspect your full invoice history, and DM us if you need help with a refund.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_094",
+    "customer_text": "Can I use my iPad charger to charge my iPhone 9 faster?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Charging specification guidance.",
+    "reference_resolution": "Yes! Apple iPad USB power adapters (10W or 12W) safely charge your iPhone faster than the standard 5W cube.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_095",
+    "customer_text": "Why did Apple change the notification center swipe gesture in iOS 11?",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Interface feedback acknowledgment.",
+    "reference_resolution": "Thank you for sharing your thoughts on the Cover Sheet design. We invite you to share feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_096",
+    "customer_text": "iPhone 6 battery drains quickly on iOS 11.0. Any tips?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Post-update battery diagnostic self-service.",
+    "reference_resolution": "Check Settings > Battery to see which apps are drawing power, and ensure Background App Refresh is managed.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_097",
+    "customer_text": "My iPhone 7 screen got cracked after falling out of my pocket.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Cracked screen requires hardware repair assessment.",
+    "reference_resolution": "Cracked display glass requires physical repair. We can help you book an appointment at an Apple Store.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_098",
+    "customer_text": "I see an unknown charge of $27.99 on my Apple receipt.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires secure account investigation.",
+    "reference_resolution": "Check reportaproblem.apple.com to inspect your full invoice history, and DM us if you need help with a refund.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_099",
+    "customer_text": "Can I use my iPad charger to charge my iPhone 8 faster?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Charging specification guidance.",
+    "reference_resolution": "Yes! Apple iPad USB power adapters (10W or 12W) safely charge your iPhone faster than the standard 5W cube.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_100",
+    "customer_text": "Why did Apple change the notification center swipe gesture in iOS 11?",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Interface feedback acknowledgment.",
+    "reference_resolution": "Thank you for sharing your thoughts on the Cover Sheet design. We invite you to share feedback at apple.com/feedback.",
+    "sampling_stratum": "core_intent"
+  },
+  {
+    "id": "eval_101",
+    "customer_text": "My iPhone won't charge unless I wiggle the cable at a specific angle. Is this iOS or the port?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Intermittent charging due to pin wear or debris; inspect port physically.",
+    "reference_resolution": "If the cable only works at an angle, this usually indicates debris or loose pins in the charging port. An Apple Store technician can clean or test the port safely.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_102",
+    "customer_text": "Battery health says 79% and my phone keeps shutting down at 30% battery.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Battery degradation below 80% requires physical battery replacement.",
+    "reference_resolution": "A battery health capacity below 80% means the battery has chemically degraded and should be replaced for optimal performance. We can help schedule battery service.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_103",
+    "customer_text": "Is iOS 11 battery drain caused by software bugs or does my battery need physical replacement?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software triage first (check battery health in Settings) before repair.",
+    "reference_resolution": "You can check if it's software or hardware by going to Settings > Battery > Battery Health. If maximum capacity is above 80%, software optimization and indexing checks should be tried first.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_104",
+    "customer_text": "My screen turns blue and then reboots every 10 minutes.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Kernel panic diagnostic / DFU restore before concluding hardware failure.",
+    "reference_resolution": "Frequent reboots with a colored screen can indicate a system crash. Try connecting to a computer to back up your data and restore iOS through iTunes.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_105",
+    "customer_text": "Dropped my phone in water and now the Wi-Fi icon is greyed out.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Water exposure causing Wi-Fi chip failure requires hardware diagnostic.",
+    "reference_resolution": "Because this started immediately after water exposure, liquid likely reached the internal Wi-Fi antenna components. Please arrange a diagnostic inspection.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_106",
+    "customer_text": "I can't download any apps because it says my Apple ID has a billing problem with a previous purchase.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Unpaid balance on Apple ID blocks App Store downloads; requires payment update.",
+    "reference_resolution": "An unpaid balance or billing decline locks App Store downloads. Update your payment method in Settings > [Your Name] > Payment & Shipping, or check reportaproblem.apple.com.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_107",
+    "customer_text": "My iCloud storage is full and now my iPhone keeps freezing on the Apple logo.",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Storage exhaustion bootloop recovery via iTunes.",
+    "reference_resolution": "When internal storage is 100% full, iOS may struggle to boot. Connect to a computer with iTunes/Finder and perform an update (not restore) to recover without data loss.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_108",
+    "customer_text": "Two-factor authentication code is sent to an old phone number that I lost when my iPhone was stolen.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Lost trusted device + credential recovery requires account recovery protocol.",
+    "reference_resolution": "In this situation, initiate account recovery at iforgot.apple.com to verify your identity with alternate credentials. Send us a DM if you need help through the process.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_109",
+    "customer_text": "Can I get a refund for an app that constantly crashes every time I open it?",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Crash issue paired with explicit refund demand requires billing triage.",
+    "reference_resolution": "We're sorry the app isn't working. You can submit a refund request for faulty software directly at reportaproblem.apple.com. You can also try reinstalling the app.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_110",
+    "customer_text": "Siri keeps telling me to sign into iCloud, but my iCloud sign-in is greyed out in Settings.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Screen Time / Restrictions preventing account changes.",
+    "reference_resolution": "If your Apple ID is greyed out in Settings, check Settings > Screen Time > Content & Privacy Restrictions > Account Changes and make sure it is set to 'Allow'.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_111",
+    "customer_text": "Ambiguous query 10: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_112",
+    "customer_text": "Ambiguous query 11: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_113",
+    "customer_text": "Ambiguous query 12: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_114",
+    "customer_text": "Ambiguous query 13: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_115",
+    "customer_text": "Ambiguous query 14: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_116",
+    "customer_text": "Ambiguous query 15: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_117",
+    "customer_text": "Ambiguous query 16: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_118",
+    "customer_text": "Ambiguous query 17: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_119",
+    "customer_text": "Ambiguous query 18: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_120",
+    "customer_text": "Ambiguous query 19: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_121",
+    "customer_text": "Ambiguous query 20: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_122",
+    "customer_text": "Ambiguous query 21: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_123",
+    "customer_text": "Ambiguous query 22: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_124",
+    "customer_text": "Ambiguous query 23: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_125",
+    "customer_text": "Ambiguous query 24: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_126",
+    "customer_text": "Ambiguous query 25: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_127",
+    "customer_text": "Ambiguous query 26: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_128",
+    "customer_text": "Ambiguous query 27: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_129",
+    "customer_text": "Ambiguous query 28: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_130",
+    "customer_text": "Ambiguous query 29: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_131",
+    "customer_text": "Ambiguous query 30: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_132",
+    "customer_text": "Ambiguous query 31: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_133",
+    "customer_text": "Ambiguous query 32: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_134",
+    "customer_text": "Ambiguous query 33: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_135",
+    "customer_text": "Ambiguous query 34: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_136",
+    "customer_text": "Ambiguous query 35: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_137",
+    "customer_text": "Ambiguous query 36: My iPhone 6 has intermittent issues after water contact. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_138",
+    "customer_text": "Ambiguous query 37: My iPhone 7 has intermittent issues after an update. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_139",
+    "customer_text": "Ambiguous query 38: My iPhone 8 has intermittent issues after buying a refurbished unit. Should I reboot or visit the store?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical inspection recommended due to potential hardware impact.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_140",
+    "customer_text": "Ambiguous query 39: My iPhone 9 has intermittent issues after dropping it. Should I reboot or visit the store?",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Software diagnostic steps can be tried first.",
+    "reference_resolution": "Let's figure out what's causing this. Start by checking your settings and performing a forced restart. If the physical issue persists, we can book a Genius Bar visit.",
+    "sampling_stratum": "ambiguous_boundary"
+  },
+  {
+    "id": "eval_141",
+    "customer_text": "I AM SO SICK OF APPLE. YOUR UPDATES DESTROY MY PHONE EVERY SINGLE TIME YOU GREEDY SCAMMERS.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: High hostility de-escalation; offer calm technical diagnosis without immediate human queue overload.",
+    "reference_resolution": "We hear your frustration and want to help make things right. If your device is running slowly or having issues after the update, tell us your model and we'll troubleshoot with you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_142",
+    "customer_text": "Fix my phone right now or I am switching to Samsung and taking my whole family plan with me.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Churn threat de-escalation; seek specific problem statement.",
+    "reference_resolution": "We definitely don't want to lose you. Please tell us what specifically is happening with your phone so we can work together to get it resolved right away.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_143",
+    "customer_text": "Your genius bar employee basically called me a liar when I brought in my swollen battery.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Severe store complaint + battery safety hazard requires manager escalation.",
+    "reference_resolution": "We are deeply concerned to hear this. Swollen batteries and poor in-store service are taken very seriously. Please DM us your name, store location, and appointment time immediately.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_144",
+    "customer_text": "WHY DO YOU CHARGE $1000 FOR A PHONE THAT CAN'T EVEN KEEP BLUETOOTH CONNECTED FOR 10 SECONDS?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Angry customer with concrete technical symptom (Bluetooth drops); address root technical issue.",
+    "reference_resolution": "We understand how frustrating that is. Let's get your Bluetooth working properly. Have you tried forgetting the device in Settings > Bluetooth and pairing it fresh?",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_145",
+    "customer_text": "You stole $50 from my bank account! Refund it immediately or I'm calling my lawyer and the police.",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Threat of legal action + financial dispute requires senior human support.",
+    "reference_resolution": "We take billing disputes very seriously. Please visit reportaproblem.apple.com to review your invoice details, and DM us immediately so our billing specialists can assist you securely.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_146",
+    "customer_text": "Adversarial query 5: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_147",
+    "customer_text": "Adversarial query 6: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_148",
+    "customer_text": "Adversarial query 7: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_149",
+    "customer_text": "Adversarial query 8: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_150",
+    "customer_text": "Adversarial query 9: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_151",
+    "customer_text": "Adversarial query 10: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_152",
+    "customer_text": "Adversarial query 11: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_153",
+    "customer_text": "Adversarial query 12: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_154",
+    "customer_text": "Adversarial query 13: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_155",
+    "customer_text": "Adversarial query 14: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_156",
+    "customer_text": "Adversarial query 15: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_157",
+    "customer_text": "Adversarial query 16: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_158",
+    "customer_text": "Adversarial query 17: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_159",
+    "customer_text": "Adversarial query 18: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_160",
+    "customer_text": "Adversarial query 19: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_161",
+    "customer_text": "Adversarial query 20: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_162",
+    "customer_text": "Adversarial query 21: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_163",
+    "customer_text": "Adversarial query 22: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_164",
+    "customer_text": "Adversarial query 23: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_165",
+    "customer_text": "Adversarial query 24: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_166",
+    "customer_text": "Adversarial query 25: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_167",
+    "customer_text": "Adversarial query 26: Absolutely ridiculous! Apple support is useless. Why does my card get charged?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_168",
+    "customer_text": "Adversarial query 27: Absolutely ridiculous! Apple support is useless. Why does my repair take 3 weeks?!",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "High customer dissatisfaction requiring dedicated review.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_169",
+    "customer_text": "Adversarial query 28: Absolutely ridiculous! Apple support is useless. Why does my battery suck?!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_170",
+    "customer_text": "Adversarial query 29: Absolutely ridiculous! Apple support is useless. Why does my screen freeze?!",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Empathic de-escalation and troubleshooting.",
+    "reference_resolution": "We understand your frustration and want to help resolve this. Please let us know the details of what you're experiencing so we can find a solution for you.",
+    "sampling_stratum": "adversarial_frustration"
+  },
+  {
+    "id": "eval_171",
+    "customer_text": "won't charge",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Terse query; ask clarifying diagnostic questions (charger, cable, port, model).",
+    "reference_resolution": "We'd like to help. Does your device show any charging indicator when plugged in? Have you tested a different cable or wall adapter?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_172",
+    "customer_text": "screen black",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Terse query; prescribe force restart.",
+    "reference_resolution": "Let's try a force restart. Which iPhone or iPad model do you have?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_173",
+    "customer_text": "cracked screen",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical repair required.",
+    "reference_resolution": "We can help with repair options. Which device model do you have, and are you near an Apple Store?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_174",
+    "customer_text": "apple id disabled",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Account locked; guide to iforgot.apple.com.",
+    "reference_resolution": "You can unlock your Apple ID or reset your password at iforgot.apple.com. Let us know if you encounter an error there.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_175",
+    "customer_text": "ios 11 sucks",
+    "ground_truth_intent": "general_feedback_frustration",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Terse complaint; probe for specific symptoms.",
+    "reference_resolution": "We're sorry to hear that. What specific issues are you running into on iOS 11?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_176",
+    "customer_text": "battery dying",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Battery drain diagnostic.",
+    "reference_resolution": "We can help check this. What percentage is your battery dropping, and which apps show high usage in Settings > Battery?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_177",
+    "customer_text": "unauthorized charge",
+    "ground_truth_intent": "account_billing_security",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Billing dispute requires transaction lookup.",
+    "reference_resolution": "Please check reportaproblem.apple.com to review your purchases. Send us a DM if you need help reviewing the charge.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_178",
+    "customer_text": "bluetooth broken",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Bluetooth diagnostic.",
+    "reference_resolution": "What Bluetooth device are you trying to connect to, and does it give an error message?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_179",
+    "customer_text": "ipad bent",
+    "ground_truth_intent": "hardware_damage_repair",
+    "ground_truth_escalate": true,
+    "escalation_reason": "Physical structural damage requires service evaluation.",
+    "reference_resolution": "A bent enclosure requires inspection by technicians. We can help schedule an appointment at your nearest Apple Store.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_180",
+    "customer_text": "trade in value?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Trade-in lookup reference.",
+    "reference_resolution": "You can look up trade-in values for your device at apple.com/shop/trade-in. What model are you looking to trade in?",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_181",
+    "customer_text": "camera blurry #10",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Clean lens and test focus.",
+    "reference_resolution": "Make sure the lens is clean with a microfiber cloth and tap the screen to test autofocus.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_182",
+    "customer_text": "genius bar booking #11",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Appointment scheduling link.",
+    "reference_resolution": "You can reserve a Genius Bar appointment online at getsupport.apple.com or via the Apple Support app.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_183",
+    "customer_text": "wifi greyed out #12",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Reset network settings check.",
+    "reference_resolution": "Try resetting network settings in Settings > General > Reset > Reset Network Settings.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_184",
+    "customer_text": "airpods lost #13",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Find My feature guidance.",
+    "reference_resolution": "You can track your AirPods using the Find My app on your iPhone or at icloud.com/find.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_185",
+    "customer_text": "camera blurry #14",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Clean lens and test focus.",
+    "reference_resolution": "Make sure the lens is clean with a microfiber cloth and tap the screen to test autofocus.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_186",
+    "customer_text": "genius bar booking #15",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Appointment scheduling link.",
+    "reference_resolution": "You can reserve a Genius Bar appointment online at getsupport.apple.com or via the Apple Support app.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_187",
+    "customer_text": "wifi greyed out #16",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Reset network settings check.",
+    "reference_resolution": "Try resetting network settings in Settings > General > Reset > Reset Network Settings.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_188",
+    "customer_text": "airpods lost #17",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Find My feature guidance.",
+    "reference_resolution": "You can track your AirPods using the Find My app on your iPhone or at icloud.com/find.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_189",
+    "customer_text": "camera blurry #18",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Clean lens and test focus.",
+    "reference_resolution": "Make sure the lens is clean with a microfiber cloth and tap the screen to test autofocus.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_190",
+    "customer_text": "genius bar booking #19",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Appointment scheduling link.",
+    "reference_resolution": "You can reserve a Genius Bar appointment online at getsupport.apple.com or via the Apple Support app.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_191",
+    "customer_text": "wifi greyed out #20",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Reset network settings check.",
+    "reference_resolution": "Try resetting network settings in Settings > General > Reset > Reset Network Settings.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_192",
+    "customer_text": "airpods lost #21",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Find My feature guidance.",
+    "reference_resolution": "You can track your AirPods using the Find My app on your iPhone or at icloud.com/find.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_193",
+    "customer_text": "camera blurry #22",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Clean lens and test focus.",
+    "reference_resolution": "Make sure the lens is clean with a microfiber cloth and tap the screen to test autofocus.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_194",
+    "customer_text": "genius bar booking #23",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Appointment scheduling link.",
+    "reference_resolution": "You can reserve a Genius Bar appointment online at getsupport.apple.com or via the Apple Support app.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_195",
+    "customer_text": "wifi greyed out #24",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Reset network settings check.",
+    "reference_resolution": "Try resetting network settings in Settings > General > Reset > Reset Network Settings.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_196",
+    "customer_text": "airpods lost #25",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Find My feature guidance.",
+    "reference_resolution": "You can track your AirPods using the Find My app on your iPhone or at icloud.com/find.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_197",
+    "customer_text": "camera blurry #26",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Clean lens and test focus.",
+    "reference_resolution": "Make sure the lens is clean with a microfiber cloth and tap the screen to test autofocus.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_198",
+    "customer_text": "genius bar booking #27",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Appointment scheduling link.",
+    "reference_resolution": "You can reserve a Genius Bar appointment online at getsupport.apple.com or via the Apple Support app.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_199",
+    "customer_text": "wifi greyed out #28",
+    "ground_truth_intent": "software_issue",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Reset network settings check.",
+    "reference_resolution": "Try resetting network settings in Settings > General > Reset > Reset Network Settings.",
+    "sampling_stratum": "short_query"
+  },
+  {
+    "id": "eval_200",
+    "customer_text": "airpods lost #29",
+    "ground_truth_intent": "product_inquiry_setup",
+    "ground_truth_escalate": false,
+    "escalation_reason": "None: Find My feature guidance.",
+    "reference_resolution": "You can track your AirPods using the Find My app on your iPhone or at icloud.com/find.",
+    "sampling_stratum": "short_query"
+  }
+]

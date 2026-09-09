@@ -1,0 +1,232 @@
+[
+  {
+    "id": "kb_soft_01",
+    "intent": "software_issue",
+    "topic": "battery_drain",
+    "query_pattern": "battery draining fast battery life dying quickly after update",
+    "resolution": "Battery drain can occur right after updating while apps and data re-index in the background. Check Settings > Battery to see which apps are using the most power, and ensure Background App Refresh is managed under Settings > General.",
+    "diagnostic_questions": [
+      "Which iOS version is currently installed?",
+      "What apps show the highest percentage under Settings > Battery?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT208387"
+  },
+  {
+    "id": "kb_soft_02",
+    "intent": "software_issue",
+    "topic": "app_crashing",
+    "query_pattern": "app crashing freeze closes immediately force closes",
+    "resolution": "If an app unexpectedly quits or freezes, try force closing the app, restarting your device, and checking the App Store for any pending updates. You can also try deleting and reinstalling the app.",
+    "diagnostic_questions": [
+      "Does this occur with one specific app or multiple apps?",
+      "Have you checked for app updates in the App Store?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT201398"
+  },
+  {
+    "id": "kb_soft_03",
+    "intent": "software_issue",
+    "topic": "wifi_bluetooth_connectivity",
+    "query_pattern": "wifi won't connect bluetooth disconnects greyed out network drops",
+    "resolution": "For Wi-Fi or Bluetooth connectivity issues, try toggling Airplane Mode on and off, restarting your router and device, and resetting network settings via Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings.",
+    "diagnostic_questions": [
+      "Does the device see other Wi-Fi networks?",
+      "Have you tested resetting network settings?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT204051"
+  },
+  {
+    "id": "kb_soft_04",
+    "intent": "software_issue",
+    "topic": "frozen_screen_black_screen",
+    "query_pattern": "screen frozen black screen unresponsive apple logo loop stuck",
+    "resolution": "If your device screen is frozen or black, perform a force restart according to your model (press and quickly release Volume Up, then Volume Down, then hold the Side button until the Apple logo appears). If it still won't turn on, connect to a computer and enter recovery mode.",
+    "diagnostic_questions": [
+      "Which exact iPhone or iPad model are you using?",
+      "Does the device vibrate or make sounds when plugged into a charger?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT201412"
+  },
+  {
+    "id": "kb_soft_05",
+    "intent": "software_issue",
+    "topic": "keyboard_text_input_glitch",
+    "query_pattern": "keyboard autocorrect glitch typing letter symbol bug predictive text",
+    "resolution": "For keyboard or predictive text glitches, try resetting the keyboard dictionary via Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary, or toggle Predictive text off and on in Settings > General > Keyboard.",
+    "diagnostic_questions": [
+      "What specific characters or apps does the keyboard glitch occur in?",
+      "Have you tried resetting the keyboard dictionary?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT207525"
+  },
+  {
+    "id": "kb_soft_06",
+    "intent": "software_issue",
+    "topic": "storage_full_system_data",
+    "query_pattern": "storage full other system data taking up all space cannot download",
+    "resolution": "If device storage is full or system data is high, review recommendations in Settings > General > iPhone Storage. Offload unused apps or back up your device and restore via computer to clear cached system logs.",
+    "diagnostic_questions": [
+      "What does Settings > General > iPhone Storage show as taking up the most space?",
+      "Do you have an iCloud or computer backup?"
+    ],
+    "recommended_action": "self_service_troubleshooting",
+    "official_link": "https://support.apple.com/HT201656"
+  },
+  {
+    "id": "kb_hard_01",
+    "intent": "hardware_damage_repair",
+    "topic": "cracked_screen_display_damage",
+    "query_pattern": "cracked screen shattered display lines on screen touch not working physically broken",
+    "resolution": "For a cracked screen or damaged display, physical inspection and authorized repair are required. Please avoid pressing hard on the glass. We can help schedule an appointment at an Apple Store Genius Bar or arrange mail-in repair.",
+    "diagnostic_questions": [
+      "Is touch responsiveness completely gone or partially working?",
+      "Do you have AppleCare+ on the device?"
+    ],
+    "recommended_action": "escalate_to_human_repair",
+    "official_link": "https://support.apple.com/iphone/repair/screen-replacement"
+  },
+  {
+    "id": "kb_hard_02",
+    "intent": "hardware_damage_repair",
+    "topic": "water_liquid_damage",
+    "query_pattern": "dropped in water liquid spill wet moisture detected in lightning port",
+    "resolution": "If your device was exposed to liquid, immediately unplug all cables, power off the device, and let it dry in an upright, well-ventilated area for at least 24-48 hours. Do not use rice or heat guns. If it fails to turn on, physical inspection at an Apple Store is necessary.",
+    "diagnostic_questions": [
+      "What type of liquid was it exposed to?",
+      "Is the moisture alert still appearing when charging?"
+    ],
+    "recommended_action": "escalate_to_human_repair",
+    "official_link": "https://support.apple.com/HT210424"
+  },
+  {
+    "id": "kb_hard_03",
+    "intent": "hardware_damage_repair",
+    "topic": "battery_swelling_physical_hazard",
+    "query_pattern": "battery swollen screen popping off bulging overheating hot burning smell",
+    "resolution": "Safety alert: If your device battery appears swollen or is pushing the screen away from the enclosure, please immediately stop using and charging the device. Place it in a fire-safe container and do not puncture it. We are escalating this immediately for urgent authorized service.",
+    "diagnostic_questions": [
+      "Is the device currently unplugged?",
+      "Can you safely bring the device to an Apple Store?"
+    ],
+    "recommended_action": "escalate_to_human_urgent_safety",
+    "official_link": "https://support.apple.com/repair"
+  },
+  {
+    "id": "kb_hard_04",
+    "intent": "hardware_damage_repair",
+    "topic": "physical_button_camera_lens_failure",
+    "query_pattern": "power button stuck volume button broken camera lens shattered silent switch loose",
+    "resolution": "Mechanical failures such as stuck buttons, shattered camera glass, or loose switches require hardware servicing by certified technicians. We recommend booking a reservation at an Apple Authorized Service Provider.",
+    "diagnostic_questions": [
+      "Which button or hardware component is unresponsive?",
+      "Is the device still under warranty or AppleCare+?"
+    ],
+    "recommended_action": "escalate_to_human_repair",
+    "official_link": "https://support.apple.com/repair"
+  },
+  {
+    "id": "kb_sec_01",
+    "intent": "account_billing_security",
+    "topic": "apple_id_locked_disabled",
+    "query_pattern": "apple id locked disabled for security reasons forgot password cannot log in",
+    "resolution": "If your Apple ID has been locked for security reasons, visit iforgot.apple.com to unlock your account or reset your password. If two-factor authentication is active and you no longer have access to your trusted device, account recovery can be initiated directly at iforgot.apple.com.",
+    "diagnostic_questions": [
+      "What exact error message appears when entering your Apple ID?",
+      "Do you have access to the trusted phone number on the account?"
+    ],
+    "recommended_action": "escalate_to_human_security",
+    "official_link": "https://iforgot.apple.com"
+  },
+  {
+    "id": "kb_sec_02",
+    "intent": "account_billing_security",
+    "topic": "unauthorized_charges_refunds",
+    "query_pattern": "unknown charge unauthorized transaction itunes bill charged twice refund subscription",
+    "resolution": "To review or dispute unexpected charges from Apple, sign in to reportaproblem.apple.com to inspect your full purchase history, see active subscriptions, and submit a refund request. Never share card details over public social media.",
+    "diagnostic_questions": [
+      "Does the charge appear in your purchase history at reportaproblem.apple.com?",
+      "Could a family sharing member have made this purchase?"
+    ],
+    "recommended_action": "escalate_to_human_billing",
+    "official_link": "https://reportaproblem.apple.com"
+  },
+  {
+    "id": "kb_sec_03",
+    "intent": "account_billing_security",
+    "topic": "activation_lock_lost_mode",
+    "query_pattern": "activation lock find my iphone locked previous owner icloud lock",
+    "resolution": "Activation Lock is designed to prevent anyone else from using your device if it's ever lost or stolen. It requires the original Apple ID and password. If you have valid proof of purchase from an authorized reseller, an Activation Lock removal request can be submitted online.",
+    "diagnostic_questions": [
+      "Are you the original purchaser with the original sales receipt?",
+      "Is the device displaying another user's email hint?"
+    ],
+    "recommended_action": "escalate_to_human_security",
+    "official_link": "https://al-support.apple.com"
+  },
+  {
+    "id": "kb_prod_01",
+    "intent": "product_inquiry_setup",
+    "topic": "device_compatibility",
+    "query_pattern": "compatible with will work with support apple watch airpods ipad pencil",
+    "resolution": "Compatibility depends on the specific hardware generation and minimum OS version. For example, Apple Watch Series 3 requires iPhone 6s or later with iOS 13 or later. Apple Pencil (1st gen) works with iPad (6th-10th gen) and iPad Air (3rd gen), while Apple Pencil (2nd gen) requires flat-edge iPad Pro or Air models.",
+    "diagnostic_questions": [
+      "Which specific generation of accessory and host device are you pairing?"
+    ],
+    "recommended_action": "self_service_information",
+    "official_link": "https://support.apple.com/HT205165"
+  },
+  {
+    "id": "kb_prod_02",
+    "intent": "product_inquiry_setup",
+    "topic": "data_migration_transfer",
+    "query_pattern": "transfer data switch to new iphone backup restore quick start move to ios",
+    "resolution": "The easiest way to set up a new iPhone is Quick Start: turn on your new device and place it near your current device with Wi-Fi and Bluetooth on. Alternatively, create a full backup via iCloud or your computer and restore during initial setup.",
+    "diagnostic_questions": [
+      "What device are you transferring from (iPhone or Android)?",
+      "Do you have a current iCloud backup?"
+    ],
+    "recommended_action": "self_service_information",
+    "official_link": "https://support.apple.com/HT210216"
+  },
+  {
+    "id": "kb_prod_03",
+    "intent": "product_inquiry_setup",
+    "topic": "trade_in_warranty_check",
+    "query_pattern": "trade in value check warranty applecare coverage status serial number lookup",
+    "resolution": "You can check your device's warranty and AppleCare coverage status at checkcoverage.apple.com by entering your serial number (found in Settings > General > About). For estimated trade-in values, visit apple.com/shop/trade-in.",
+    "diagnostic_questions": [
+      "Have you checked your serial number at checkcoverage.apple.com?"
+    ],
+    "recommended_action": "self_service_information",
+    "official_link": "https://checkcoverage.apple.com"
+  },
+  {
+    "id": "kb_feed_01",
+    "intent": "general_feedback_frustration",
+    "topic": "os_design_feedback_dissatisfaction",
+    "query_pattern": "hate the new update terrible design bring back old feature worst update",
+    "resolution": "We understand change can be disruptive and we appreciate you taking the time to share your perspective. Our product teams actively review customer feedback submitted through apple.com/feedback. If there is a specific feature you need help configuring, let us know.",
+    "diagnostic_questions": [
+      "Which specific feature or setting is causing the most difficulty?"
+    ],
+    "recommended_action": "de_escalate_and_guide",
+    "official_link": "https://www.apple.com/feedback"
+  },
+  {
+    "id": "kb_feed_02",
+    "intent": "general_feedback_frustration",
+    "topic": "retail_store_customer_service_complaint",
+    "query_pattern": "rudest employee terrible service at store waited hours no help management complaint",
+    "resolution": "We are deeply sorry to hear about your experience at the store. That is certainly not the standard of service we strive to deliver. Please send us a direct message with the store location, date of visit, and your contact information so our retail leadership team can address this.",
+    "diagnostic_questions": [
+      "Which store location did you visit, and did you have a Genius Bar reservation?"
+    ],
+    "recommended_action": "escalate_to_human_complaint",
+    "official_link": "https://twitter.com/messages/compose?recipient_id=AppleSupport"
+  }
+]

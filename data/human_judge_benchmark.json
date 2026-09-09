@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "eval_001",
+    "customer_text": "My iPhone 8 battery drops 20% in an hour after installing iOS 11.0.2. What should I do?",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Standard post-update indexing troubleshooting and Settings > Battery check can be self-serviced.",
+    "reference_resolution": "Battery usage can temporarily increase after an update as background indexing occurs. Check Settings > Battery to see which apps are consuming the most power, and restart your device.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_002",
+    "customer_text": "Spotify keeps freezing on my iPad Air whenever I try to download offline songs.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: App-specific crash can be resolved with force quit, app reinstall, and storage check.",
+    "reference_resolution": "Let's get this sorted. Try force closing Spotify, restarting your iPad, and checking for updates in the App Store. If it persists, reinstalling the app often helps.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_003",
+    "customer_text": "Wi-Fi button is greyed out on my iPhone 7. I cannot toggle it on at all.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Software network reset can be attempted first before hardware inspection.",
+    "reference_resolution": "We'd like to help with your Wi-Fi. Have you tried resetting Network Settings in Settings > General > Reset > Reset Network Settings? Let us know if the toggle remains grey.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_004",
+    "customer_text": "Ever since the update my alarm didn't go off this morning! Anyone else having alarm volume bugs?",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Sound settings and Attention Aware features can be self-serviced.",
+    "reference_resolution": "We understand how important reliable alarms are. Check Settings > Sounds & Haptics to verify ringer volume, and make sure Change with Buttons is configured to your preference.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_005",
+    "customer_text": "My iPhone screen is completely black but it still vibrates when I plug it into the charger.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Force restart sequence resolves unresponsive display state.",
+    "reference_resolution": "It sounds like the display may be unresponsive. Please try a force restart: quickly press Volume Up, Volume Down, then hold the Side button until the Apple logo appears.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_006",
+    "customer_text": "Bluetooth keeps disconnecting from my car audio every 5 minutes on iOS 11.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Unpairing and re-pairing Bluetooth profile can be self-serviced.",
+    "reference_resolution": "Let's work on this Bluetooth connection. Go to Settings > Bluetooth, tap the 'i' next to your car, choose Forget This Device, and pair it again after restarting both devices.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_007",
+    "customer_text": "My camera app is just showing a black screen when I open it. Front camera works fine though.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Standard camera app restart and flashlight toggle diagnostic.",
+    "reference_resolution": "Let's troubleshoot the camera. Try closing the Camera app from the app switcher, restart your iPhone, and test if the flashlight works from Control Center.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_008",
+    "customer_text": "AirDrop is not detecting any contacts on my MacBook from my iPhone 6s.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: AirDrop discovery settings (Everyone vs Contacts Only) and Wi-Fi/Bluetooth toggle.",
+    "reference_resolution": "Check that AirDrop is set to 'Everyone' temporarily in Control Center, and ensure both Wi-Fi and Bluetooth are enabled on both devices.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_009",
+    "customer_text": "Over 25 GB of my iPhone storage is listed as 'System Data' or 'Other'. How do I clean this?",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Storage cache clean via computer sync / backup restore can be self-serviced.",
+    "reference_resolution": "System Data includes caches, logs, and Siri voices. Connecting your iPhone to a computer and syncing with iTunes often clears out accumulated temporary cache files.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_010",
+    "customer_text": "Notification badges for Mail won't clear even though all emails are marked as read.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Toggle Mail notifications or re-fetch mail account.",
+    "reference_resolution": "Try going to Settings > Notifications > Mail, toggling Badges off and on, or restarting your device. Let us know if the phantom badge persists.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_011",
+    "customer_text": "FaceTime calls immediately fail when connected to my home Wi-Fi network.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Wi-Fi router DNS / network settings check.",
+    "reference_resolution": "Does FaceTime connect when you test on cellular data or another Wi-Fi network? This will help us determine if a network firewall or router setting is blocking FaceTime ports.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_012",
+    "customer_text": "My podcast downloads keep pausing automatically when screen locks.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Background App Refresh and Low Power Mode settings.",
+    "reference_resolution": "Ensure Low Power Mode is disabled in Settings > Battery, and check that Background App Refresh is enabled for Podcasts under Settings > General > Background App Refresh.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_013",
+    "customer_text": "Siri says 'Sorry, I am having trouble understanding right now' to every single query.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Network connectivity check and Siri toggle.",
+    "reference_resolution": "Siri requires an active internet connection. Try toggling Siri off and on in Settings > Siri & Search, and test while connected to cellular data.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_014",
+    "customer_text": "My iPhone won't update to iOS 11.1, it says 'Unable to Verify Update'.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Delete downloaded OTA update file in Storage and re-download.",
+    "reference_resolution": "Go to Settings > General > iPhone Storage, find the iOS update installer file, delete it, and then try downloading the update again under Settings > General > Software Update.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_015",
+    "customer_text": "Autocorrect keeps replacing the letter 'i' with an exclamation mark and a box symbol! Help!",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Text Replacement temporary fix or update to iOS 11.1.1.",
+    "reference_resolution": "This is a known issue resolved in iOS 11.1.1. You can update now in Settings > General > Software Update, or set a Text Replacement shortcut in Settings > General > Keyboard.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_016",
+    "customer_text": "Apple Music songs keep skipping randomly after playing for 15 seconds.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Sync library toggle and cellular streaming settings.",
+    "reference_resolution": "Try signing out of Media & Purchases under your Apple ID settings and signing back in. Also verify Cellular Data streaming settings under Settings > Music.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_017",
+    "customer_text": "My iPad screen brightness won't change even when moving the slider in Control Center.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Auto-Brightness toggle in Accessibility settings and restart.",
+    "reference_resolution": "Check if Auto-Brightness is enabled under Settings > Accessibility > Display & Text Size. A quick device restart will also refresh the ambient light sensor calibration.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_018",
+    "customer_text": "Messages app crashes immediately upon opening a conversation with photos.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Storage clearance and force restart.",
+    "reference_resolution": "Does your device have sufficient available storage? Check Settings > General > iPhone Storage, and try performing a force restart to clear app memory cache.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_019",
+    "customer_text": "Personal Hotspot option is missing completely from my Settings menu.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Carrier settings update check.",
+    "reference_resolution": "Go to Settings > General > About to see if a Carrier Settings update prompt appears. If not, verify with your cellular carrier that Hotspot is active on your plan.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_020",
+    "customer_text": "Voice memos recorded on my Apple Watch are not syncing to my iPhone Voice Memos app.",
+    "ground_truth_intent": "software_issue",
+    "human_escalate": false,
+    "human_escalation_reason": "None: iCloud sync settings for Voice Memos.",
+    "reference_resolution": "Ensure iCloud sync is enabled for Voice Memos on your iPhone under Settings > [Your Name] > iCloud > Show All > Voice Memos, and keep both devices on Wi-Fi.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_021",
+    "customer_text": "Dropped my iPhone 8 on concrete and the back glass is completely shattered. How much to fix?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Physical repair required; customer needs Genius Bar reservation or mail-in repair pricing.",
+    "reference_resolution": "We're sorry to see that happened. Back glass repair requires service by certified technicians. We can help you check repair estimates and book an Apple Store Genius Bar appointment.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_022",
+    "customer_text": "My iPhone fell into the bathtub and now the speaker sounds muffled and distorted.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Liquid ingress requires physical diagnostic and hardware inspection.",
+    "reference_resolution": "Please disconnect any chargers and allow the phone to dry in a dry, ventilated area. Avoid inserting objects into the speaker. If audio remains muffled, authorized inspection is necessary.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_023",
+    "customer_text": "The lock button on the side of my iPhone 6s is physically stuck and won't click anymore.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Mechanical button failure requires hardware component replacement.",
+    "reference_resolution": "Since the sleep/wake button is physically jammed, this will need a hardware repair. In the meantime, you can enable AssistiveTouch in Settings > Accessibility > Touch.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_024",
+    "customer_text": "There are vertical colored green lines going down my iPhone X screen after dropping it.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "OLED panel physical display damage requires screen replacement.",
+    "reference_resolution": "Vertical green lines indicate physical impact damage to the OLED display panel. This requires a screen replacement at an Apple Store or Authorized Service Provider.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_025",
+    "customer_text": "My iPhone battery is physically expanding and the screen is lifting away from the metal frame!",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Critical safety hazard: Swollen battery requires urgent handling and fire safety precautions.",
+    "reference_resolution": "Please stop using and charging the device immediately. Place it in a cool, fire-safe container and do not puncture or press on the glass. We are escalating this for priority service.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_026",
+    "customer_text": "The lightning cable snapped off inside the charging port and the metal piece is stuck inside.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Foreign object in port requires technician extraction to prevent pin damage.",
+    "reference_resolution": "Do not use metal tools like needles to pry it out as this can short-circuit the internal pins. A technician at an Apple Store Genius Bar can safely extract the connector.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_027",
+    "customer_text": "My MacBook Pro keyboard keys are completely unresponsive and the spacebar won't register.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Hardware keyboard failure requires technician assessment or keyboard service program.",
+    "reference_resolution": "Keyboard hardware issues require diagnostic inspection. We can help schedule an appointment at an Apple Store or evaluate eligibility under Apple's keyboard service programs.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_028",
+    "customer_text": "The sapphire glass covering my iPhone 7 camera lens has cracked, making all photos blurry.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Physical camera enclosure fracture requires lens/module repair.",
+    "reference_resolution": "A cracked camera lens requires physical replacement to protect the optical sensor from dust. We can assist in setting up a repair reservation.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_029",
+    "customer_text": "My iPad was run over by a car. It is bent in half. Can anything be recovered?",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Catastrophic structural damage requires out-of-warranty replacement evaluation.",
+    "reference_resolution": "That sounds like severe structural damage. If you had iCloud Backup enabled, your data is safe in the cloud. Bring the device to an Apple Store to discuss whole-unit replacement options.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_030",
+    "customer_text": "Apple Watch screen popped off while I was swimming. Adhesive seems completely detached.",
+    "ground_truth_intent": "hardware_damage_repair",
+    "human_escalate": true,
+    "human_escalation_reason": "Display detachment / battery expansion inspection required.",
+    "reference_resolution": "If the watch face has detached, discontinue use and do not submerge it. This will need inspection at an Apple Store or service depot to determine repair or battery coverage.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_031",
+    "customer_text": "My Apple ID was locked for security reasons and I don't have access to my old phone number for 2FA.",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Account security and 2FA recovery require authenticated identity verification; cannot resolve over public Twitter.",
+    "reference_resolution": "We understand how crucial your Apple ID is. You can initiate account recovery at iforgot.apple.com. Because this involves personal security, please send us a DM if you need guidance through the steps.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_032",
+    "customer_text": "I see three charges of $29.99 from 'ITUNES.COM/BILL' on my credit card that I did not authorize!",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Financial transaction dispute and unauthorized charge investigation require private account review.",
+    "reference_resolution": "We take unauthorized charges very seriously. Check reportaproblem.apple.com with your Apple ID to identify the purchases. Please DM us so we can guide you on securing your account and requesting refunds.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_033",
+    "customer_text": "How do I cancel my Apple Music family subscription before it automatically renews tomorrow?",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Subscription management can be performed directly in device Settings.",
+    "reference_resolution": "You can manage subscriptions directly on your device: open Settings > tap [Your Name] > Subscriptions, select Apple Music, and tap Cancel Subscription.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_034",
+    "customer_text": "I got an email saying my Apple ID was used to buy an iPhone X in China. Is this real or phishing?",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Phishing identification guidelines can be provided publicly without private data.",
+    "reference_resolution": "This sounds like a phishing attempt. Check the sender's actual email address. Genuine emails from Apple will never ask for your password or credit card. Forward suspicious emails to reportphishing@apple.com.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_035",
+    "customer_text": "I forgot my Apple ID password and my security questions are not working.",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Credential reset failure requires secure account recovery workflow.",
+    "reference_resolution": "Password resets must be completed through iforgot.apple.com to protect your data privacy. Send us a DM if you run into any barriers during the online recovery process.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_036",
+    "customer_text": "My child accidentally spent $200 on Roblox coins in the App Store. Can I get a refund?",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "App Store refund review requires accessing transaction records.",
+    "reference_resolution": "You can submit a refund request directly at reportaproblem.apple.com. Sign in with the Apple ID used for the purchase, select 'Request a refund', and choose 'A child purchased this without permission'.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_037",
+    "customer_text": "I bought a used iPad on eBay and it has an iCloud Activation Lock asking for the previous owner's email.",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Activation Lock cannot be bypassed without proof of purchase or previous owner authorization.",
+    "reference_resolution": "Activation Lock is an anti-theft security feature. Only the previous owner can remove it by signing in at icloud.com/find. If the seller cannot remove it, we recommend returning the device for a refund.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_038",
+    "customer_text": "I received a two-factor verification code on my phone that I didn't request! Is someone hacking me?",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Potential active security breach requires immediate credential revocation.",
+    "reference_resolution": "Do not share that verification code with anyone. If you didn't request it, someone may know your password. Change your Apple ID password immediately at appleid.apple.com.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_039",
+    "customer_text": "Why is my iCloud storage showing 50GB full when I barely have any photos?",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": false,
+    "human_escalation_reason": "None: iCloud storage breakdown inspection can be self-serviced in Settings.",
+    "reference_resolution": "Check your storage breakdown in Settings > [Your Name] > iCloud > Manage Account Storage. Old device backups, Messages attachments, and iCloud Drive often take up unexpected space.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_040",
+    "customer_text": "My credit card payment keeps getting declined in the App Store even though my bank says it's fine.",
+    "ground_truth_intent": "account_billing_security",
+    "human_escalate": true,
+    "human_escalation_reason": "Payment method verification requires secure billing investigation.",
+    "reference_resolution": "Ensure your billing address in Settings > [Your Name] > Payment & Shipping matches your card statement exactly. If errors persist, reach out to us in DM for secure billing support.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_041",
+    "customer_text": "Will the Apple Pencil 2 work with my 9.7-inch iPad 2018?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Hardware specification and compatibility query.",
+    "reference_resolution": "The 9.7-inch iPad (6th generation, 2018) is compatible with Apple Pencil (1st generation). Apple Pencil (2nd generation) is only compatible with magnetic flat-edge iPad models.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_042",
+    "customer_text": "How do I transfer all my photos and WhatsApp chats from my old Samsung Galaxy to iPhone 8?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Setup and platform migration guidance with official app links.",
+    "reference_resolution": "You can use the 'Move to iOS' app from the Google Play Store during the initial setup of your iPhone to transfer contacts, photos, and messages seamlessly.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_043",
+    "customer_text": "What is the estimated trade-in value for an iPhone 7 128GB in good condition?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Standard trade-in lookup reference.",
+    "reference_resolution": "Trade-in values vary based on device condition. You can get an instant estimate and review trade-in options at apple.com/shop/trade-in.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_044",
+    "customer_text": "Does the iPhone 8 support fast charging and what charger do I need to buy?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Technical specification on USB-PD charging standards.",
+    "reference_resolution": "Yes, iPhone 8 supports fast charging up to 50% in 30 minutes using an Apple 18W (or higher) USB-C power adapter and an official USB-C to Lightning cable.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_045",
+    "customer_text": "Can I pair two pairs of AirPods to the same iPhone at the same time to watch a movie together?",
+    "ground_truth_intent": "product_inquiry_setup",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Audio Sharing feature guidance.",
+    "reference_resolution": "Yes! With Audio Sharing, tap the AirPlay icon in Control Center or on the lock screen and select 'Share Audio', then bring the second pair of AirPods close to your iPhone.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_046",
+    "customer_text": "The new iOS 11 Control Center is the ugliest, most confusing design Apple has ever made.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Product design feedback de-escalation; guide to feedback portal.",
+    "reference_resolution": "We appreciate you taking the time to share your feedback. Our software design teams regularly review user thoughts submitted through apple.com/feedback.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_047",
+    "customer_text": "Waited over an hour past my Genius Bar appointment time at the Sydney store today. Disgraceful service.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "human_escalate": true,
+    "human_escalation_reason": "Retail customer service failure requires manager follow-up via private channel.",
+    "reference_resolution": "We sincerely apologize for the delay and frustration. That is not the experience we want for our customers. Please DM us your reservation details and email so we can look into this with store leadership.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_048",
+    "customer_text": "Why did Apple remove the 3.5mm headphone jack? Having to use a dongle everywhere is ridiculous.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Design feedback de-escalation.",
+    "reference_resolution": "We hear you, and appreciate your candid thoughts. You can submit feature and design feedback directly to our product teams at apple.com/feedback.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_049",
+    "customer_text": "The Apple Store Covent Garden staff was incredibly helpful today fixing my MacBook. Kudos to the team!",
+    "ground_truth_intent": "general_feedback_frustration",
+    "human_escalate": false,
+    "human_escalation_reason": "None: Positive praise acknowledgment.",
+    "reference_resolution": "That's wonderful to hear! We love knowing our team at Covent Garden took great care of you. We'll pass your kind words along to the store!",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  },
+  {
+    "id": "eval_050",
+    "customer_text": "Ever since Steve Jobs passed away Apple products just don't have the same magic anymore.",
+    "ground_truth_intent": "general_feedback_frustration",
+    "human_escalate": false,
+    "human_escalation_reason": "None: General philosophical brand comment.",
+    "reference_resolution": "We remain dedicated to making the best products and experiences in the world. Thank you for being a long-time part of the Apple community.",
+    "human_ratings": {
+      "grounding_accuracy": 5,
+      "brand_tone": 5,
+      "actionability": 5,
+      "safety_privacy": 5,
+      "overall_score": 5.0
+    },
+    "candidate_trivial": {
+      "draft": "Hello! We are here to help. Please restart your device or visit support.apple.com.",
+      "human_ratings": {
+        "grounding_accuracy": 2,
+        "brand_tone": 3,
+        "actionability": 2,
+        "safety_privacy": 4,
+        "overall_score": 2.75
+      }
+    }
+  }
+]
