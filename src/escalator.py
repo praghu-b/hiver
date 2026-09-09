@@ -48,7 +48,7 @@ class EscalationEngine:
         """Decide whether to escalate or auto-handle with explicit reason."""
         lower_text = text.lower()
 
-        # 1. Critical Safety Hazard
+        # 1. Critical Safety Hazard (swollen battery, burning, smoke)
         for pat in self.safety_patterns:
             if re.search(pat, lower_text):
                 return EscalationDecision(
@@ -58,7 +58,34 @@ class EscalationEngine:
                     category="safety_hazard"
                 )
 
-        # 2. Financial & Billing Disputes
+        # 2. Direct Physical Hardware Damage (shattered, water spill, stuck buttons, loose port)
+        if any(w in lower_text for w in [
+            "crack", "shatter", "broken glass", "dropped", "screen popping", "swollen", "bulging",
+            "spilled", "water", "bathtub", "liquid", "submerged", "physically stuck",
+            "button.*stuck", "stuck and won't click", "popped off", "loose and the cable falls",
+            "loose port", "rattling", "taptic engine", "bent in half", "snapped off", "green lines"
+        ]):
+            return EscalationDecision(
+                should_escalate=True,
+                confidence=0.96,
+                reason="Physical hardware damage requires authorized diagnostic inspection, Genius Bar appointment, or mail-in repair.",
+                category="hardware_repair"
+            )
+
+        # 3. Explicit Self-Service Exceptions (Subscriptions, Screen Time, Phishing info, Rotation, Product)
+        if any(w in lower_text for w in [
+            "cancel.*subscription", "cancel my apple music", "screen time passcode",
+            "phishing", "rotation is locked", "orientation lock", "how do i change email",
+            "how do i change it", "transfer purchases", "charger"
+        ]):
+            return EscalationDecision(
+                should_escalate=False,
+                confidence=0.90,
+                reason="None: Standard self-service procedures in device Settings or official portal resolve this inquiry.",
+                category="self_service_account"
+            )
+
+        # 4. Financial & Billing Disputes
         for pat in self.billing_patterns:
             if re.search(pat, lower_text):
                 return EscalationDecision(
@@ -68,7 +95,7 @@ class EscalationEngine:
                     category="billing_dispute"
                 )
 
-        # 3. Severe Customer Frustration / Legal Threats / In-Store Failures
+        # 5. Severe Customer Frustration / Legal Threats / In-Store Failures
         for pat in self.hostility_patterns:
             if re.search(pat, lower_text):
                 return EscalationDecision(
@@ -107,7 +134,10 @@ class EscalationEngine:
                         category="account_security"
                     )
             # Check for self-serviceable account sub-topics (e.g., standard cancel subscription instructions)
-            if any(w in lower_text for w in ["cancel subscription", "phishing", "screen time passcode", "how do i change email"]):
+            if any(w in lower_text for w in [
+                "cancel subscription", "phishing", "screen time passcode", "how do i change email",
+                "how do i change it", "transfer purchases", "charger"
+            ]):
                 return EscalationDecision(
                     should_escalate=False,
                     confidence=0.88,

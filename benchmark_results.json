@@ -1,0 +1,309 @@
+{
+  "evaluation_timestamp": "2026-09-09T09:36:54Z",
+  "golden_set_size": 200,
+  "human_benchmark_size": 50,
+  "systems": [
+    {
+      "name": "Baseline 1 (Trivial)",
+      "sample_count": 200,
+      "execution_time_sec": 0.03,
+      "classification": {
+        "accuracy": 0.37,
+        "macro_f1": 0.108,
+        "weighted_f1": 0.1999,
+        "per_class": {
+          "software_issue": {
+            "precision": 0.37,
+            "recall": 1.0,
+            "f1": 0.5401,
+            "support": 74
+          },
+          "hardware_damage_repair": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 39
+          },
+          "account_billing_security": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 32
+          },
+          "product_inquiry_setup": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 25
+          },
+          "general_feedback_frustration": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 30
+          }
+        },
+        "confusion_matrix": {
+          "software_issue": {
+            "software_issue": 74,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          },
+          "hardware_damage_repair": {
+            "software_issue": 39,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          },
+          "account_billing_security": {
+            "software_issue": 32,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          },
+          "product_inquiry_setup": {
+            "software_issue": 25,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          },
+          "general_feedback_frustration": {
+            "software_issue": 30,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          }
+        }
+      },
+      "escalation": {
+        "accuracy": 0.665,
+        "precision": 0.5278,
+        "recall": 0.2754,
+        "f1": 0.3619,
+        "false_negative_rate": 0.7246,
+        "false_positive_rate": 0.1298,
+        "tp": 19,
+        "fp": 17,
+        "fn": 50,
+        "tn": 114
+      },
+      "generation": {
+        "rouge1": 0.1641,
+        "rouge2": 0.0197,
+        "rougeL": 0.1199,
+        "twitter_length_compliance_pct": 100.0,
+        "judge_overall_score": 2.74
+      }
+    },
+    {
+      "name": "Baseline 2 (Simple)",
+      "sample_count": 200,
+      "execution_time_sec": 0.08,
+      "classification": {
+        "accuracy": 0.455,
+        "macro_f1": 0.3944,
+        "weighted_f1": 0.4466,
+        "per_class": {
+          "software_issue": {
+            "precision": 0.6389,
+            "recall": 0.6216,
+            "f1": 0.6301,
+            "support": 74
+          },
+          "hardware_damage_repair": {
+            "precision": 0.5385,
+            "recall": 0.359,
+            "f1": 0.4308,
+            "support": 39
+          },
+          "account_billing_security": {
+            "precision": 0.2545,
+            "recall": 0.4375,
+            "f1": 0.3218,
+            "support": 32
+          },
+          "product_inquiry_setup": {
+            "precision": 0.3333,
+            "recall": 0.56,
+            "f1": 0.4179,
+            "support": 25
+          },
+          "general_feedback_frustration": {
+            "precision": 0.6,
+            "recall": 0.1,
+            "f1": 0.1714,
+            "support": 30
+          }
+        },
+        "confusion_matrix": {
+          "software_issue": {
+            "software_issue": 46,
+            "hardware_damage_repair": 9,
+            "account_billing_security": 13,
+            "product_inquiry_setup": 4,
+            "general_feedback_frustration": 2
+          },
+          "hardware_damage_repair": {
+            "software_issue": 5,
+            "hardware_damage_repair": 14,
+            "account_billing_security": 19,
+            "product_inquiry_setup": 1,
+            "general_feedback_frustration": 0
+          },
+          "account_billing_security": {
+            "software_issue": 10,
+            "hardware_damage_repair": 1,
+            "account_billing_security": 14,
+            "product_inquiry_setup": 7,
+            "general_feedback_frustration": 0
+          },
+          "product_inquiry_setup": {
+            "software_issue": 6,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 5,
+            "product_inquiry_setup": 14,
+            "general_feedback_frustration": 0
+          },
+          "general_feedback_frustration": {
+            "software_issue": 5,
+            "hardware_damage_repair": 2,
+            "account_billing_security": 4,
+            "product_inquiry_setup": 16,
+            "general_feedback_frustration": 3
+          }
+        }
+      },
+      "escalation": {
+        "accuracy": 0.72,
+        "precision": 0.5802,
+        "recall": 0.6812,
+        "f1": 0.6267,
+        "false_negative_rate": 0.3188,
+        "false_positive_rate": 0.2595,
+        "tp": 47,
+        "fp": 34,
+        "fn": 22,
+        "tn": 97
+      },
+      "generation": {
+        "rouge1": 0.1895,
+        "rouge2": 0.055,
+        "rougeL": 0.1472,
+        "twitter_length_compliance_pct": 100.0,
+        "judge_overall_score": 4.05
+      }
+    },
+    {
+      "name": "Proposed (AppleSupportAgent)",
+      "sample_count": 200,
+      "execution_time_sec": 0.1,
+      "classification": {
+        "accuracy": 0.795,
+        "macro_f1": 0.7926,
+        "weighted_f1": 0.7969,
+        "per_class": {
+          "software_issue": {
+            "precision": 0.7174,
+            "recall": 0.8919,
+            "f1": 0.7952,
+            "support": 74
+          },
+          "hardware_damage_repair": {
+            "precision": 0.9667,
+            "recall": 0.7436,
+            "f1": 0.8406,
+            "support": 39
+          },
+          "account_billing_security": {
+            "precision": 0.96,
+            "recall": 0.75,
+            "f1": 0.8421,
+            "support": 32
+          },
+          "product_inquiry_setup": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 25
+          },
+          "general_feedback_frustration": {
+            "precision": 0.6579,
+            "recall": 0.8333,
+            "f1": 0.7353,
+            "support": 30
+          }
+        },
+        "confusion_matrix": {
+          "software_issue": {
+            "software_issue": 66,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 1,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 7
+          },
+          "hardware_damage_repair": {
+            "software_issue": 10,
+            "hardware_damage_repair": 29,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 0
+          },
+          "account_billing_security": {
+            "software_issue": 2,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 24,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 6
+          },
+          "product_inquiry_setup": {
+            "software_issue": 10,
+            "hardware_damage_repair": 0,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 15,
+            "general_feedback_frustration": 0
+          },
+          "general_feedback_frustration": {
+            "software_issue": 4,
+            "hardware_damage_repair": 1,
+            "account_billing_security": 0,
+            "product_inquiry_setup": 0,
+            "general_feedback_frustration": 25
+          }
+        }
+      },
+      "escalation": {
+        "accuracy": 0.9,
+        "precision": 0.9623,
+        "recall": 0.7391,
+        "f1": 0.8361,
+        "false_negative_rate": 0.2609,
+        "false_positive_rate": 0.0153,
+        "tp": 51,
+        "fp": 2,
+        "fn": 18,
+        "tn": 129
+      },
+      "generation": {
+        "rouge1": 0.2084,
+        "rouge2": 0.0375,
+        "rougeL": 0.1437,
+        "twitter_length_compliance_pct": 100.0,
+        "judge_overall_score": 4.61
+      }
+    }
+  ],
+  "human_judge_agreement": {
+    "benchmark_samples": 70,
+    "cohens_kappa": 0.8679,
+    "pearson_correlation": 0.8969,
+    "mean_absolute_error": 0.4429,
+    "exact_agreement_pct": 10.0,
+    "within_1_point_pct": 94.3
+  }
+}

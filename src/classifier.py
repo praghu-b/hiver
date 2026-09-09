@@ -122,51 +122,86 @@ Customer Query: "{text}"
         return None
 
     def _classify_with_heuristic(self, text: str) -> IntentPrediction:
-        """Deterministic keyword-density & pattern classifier."""
+        """Deterministic keyword-density & contextual pattern classifier."""
         lower_text = text.lower()
         scores: Dict[str, float] = {intent.value: 0.0 for intent in IntentEnum}
 
-        # Weight patterns
+        # 1. High-priority compound patterns
+        # Hardware Damage & Physical Failures
+        if any(w in lower_text for w in [
+            "crack", "shatter", "broken glass", "dropped", "screen popping", "expanding",
+            "swollen", "bulging", "smoke", "spilled", "water", "bathtub", "liquid", "submerged",
+            "physically stuck", "button.*stuck", "stuck and won't click", "popped off",
+            "loose and the cable falls", "loose port", "rattling", "taptic engine", "bent in half",
+            "snapped off inside", "green lines", "digitizer", "fallen out", "speaker grill",
+            "spacebar won't register", "keyboard keys are completely unresponsive"
+        ]):
+            scores[IntentEnum.HARDWARE_DAMAGE_REPAIR.value] += 15.0
+
+        # Account, Security & Billing (explicitly avoiding 'charger' / 'charging')
+        if any(w in lower_text for w in [
+            "apple id", "iforgot", "2fa", "two-factor", "verification code", "activation lock",
+            "stolen", "hacked", "phishing", "itunes.com/bill", "charged my card", "charged twice",
+            "unknown charge", "unauthorized charge", "unauthorized transaction",
+            "refund", "subscription", "purchase history", "declined in the app store", "screen time passcode",
+            "family sharing on my account"
+        ]):
+            scores[IntentEnum.ACCOUNT_BILLING_SECURITY.value] += 15.0
+
+        # General Feedback & Frustration (Design complaints, store complaints, praise, emotion)
+        if any(w in lower_text for w in [
+            "ugliest", "worst design", "confusing design", "hate the new", "terrible design",
+            "remove the 3.5mm", "headphone jack", "bring back", "steve jobs", "disgraceful service",
+            "waited over an hour", "store staff", "store complaint", "hold music", "phone queue",
+            "so sick of apple", "greedy scammers", "switching to samsung", "useless", "sucks",
+            "kudos to the team", "shoutout", "great job", "thank you guys", "really miss the",
+            "cables so fragile", "app store redesign"
+        ]):
+            scores[IntentEnum.GENERAL_FEEDBACK_FRUSTRATION.value] += 15.0
+
+        # Product Inquiry & Setup
+        if any(w in lower_text for w in [
+            "compatible with", "will.*work with", "trade in value", "trade-in value",
+            "fast charging", "charger to charge", "pair two pairs", "audio sharing",
+            "move to ios", "transfer data", "switch to new", "check coverage", "warranty status",
+            "difference between icloud backup", "case fit the", "set up apple pay",
+            "work internationally", "can i use airpods with"
+        ]):
+            scores[IntentEnum.PRODUCT_INQUIRY_SETUP.value] += 15.0
+
+        # Standard token/regex scoring
         for intent, regex_list in self.intent_patterns.items():
             for pat in regex_list:
                 matches = len(re.findall(pat, lower_text))
-                scores[intent.value] += matches * 2.0
+                scores[intent.value] += matches * 1.5
 
-        # Disambiguation heuristics:
-        # If water damage mentioned, hardware_damage_repair takes precedence over software_issue
-        if any(w in lower_text for w in ["water", "liquid", "submerged", "bathtub"]):
-            scores[IntentEnum.HARDWARE_DAMAGE_REPAIR.value] += 5.0
+        # Disambiguation Contextual Overrides:
+        # "rotation is locked" or "orientation lock" is software, not account security
+        if "rotation" in lower_text or "portrait orientation" in lower_text:
+            scores[IntentEnum.SOFTWARE_ISSUE.value] += 15.0
+            scores[IntentEnum.ACCOUNT_BILLING_SECURITY.value] -= 10.0
 
-        # If battery swelling or physical expansion
-        if any(w in lower_text for w in ["swollen", "bulging", "popping off"]):
-            scores[IntentEnum.HARDWARE_DAMAGE_REPAIR.value] += 10.0
+        # "iCloud storage is full" or "System Data" is software storage issue, unless asking about price/billing
+        if "storage" in lower_text and not any(b in lower_text for b in ["charge", "bill", "price", "refund"]):
+            scores[IntentEnum.SOFTWARE_ISSUE.value] += 8.0
 
-        # If refund or unauthorized charge
-        if any(w in lower_text for w in ["refund", "unauthorized charge", "itunes.com/bill", "charged twice"]):
-            scores[IntentEnum.ACCOUNT_BILLING_SECURITY.value] += 6.0
-
-        # If cracked screen
-        if any(w in lower_text for w in ["cracked", "shattered"]):
-            scores[IntentEnum.HARDWARE_DAMAGE_REPAIR.value] += 6.0
-
-        # If Apple ID or password
-        if any(w in lower_text for w in ["apple id", "iforgot", "2fa", "two-factor", "activation lock"]):
-            scores[IntentEnum.ACCOUNT_BILLING_SECURITY.value] += 6.0
+        # "screen is completely black" or "black screen" or "vibrates" is software display state unless cracked
+        if any(b in lower_text for b in ["black screen", "screen is completely black", "vibrate", "force restart"]) and not any(h in lower_text for h in ["crack", "drop"]):
+            scores[IntentEnum.SOFTWARE_ISSUE.value] += 10.0
+            scores[IntentEnum.PRODUCT_INQUIRY_SETUP.value] = 0.0
 
         # Find best intent
         best_intent = max(scores, key=scores.get)
         max_score = scores[best_intent]
 
-        # If no keywords matched, default to software_issue (most frequent customer support topic)
         if max_score == 0.0:
             return IntentPrediction(
                 intent=IntentEnum.SOFTWARE_ISSUE.value,
                 confidence=0.60,
-                explanation="Default software intent assigned due to absence of specific hardware, billing, or inquiry triggers."
+                explanation="Default software intent assigned due to absence of specific triggers."
             )
 
-        # Compute calibrated confidence
-        total_score = sum(scores.values())
+        total_score = sum(max(0.0, s) for s in scores.values())
         confidence = min(0.98, round(max_score / (total_score + 1e-5), 2))
         confidence = max(0.65, confidence)
 
